@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Gray);
+    padding: 100px 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 14px 1px #00000024;
+    overflow: hidden;
+}
+
+.item{
+    padding: 30px;
+}
+
+.item1{
+    background-color: white;
+}
+
+.item1 h2{
+    color: var(--Cyan);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.item1 h3{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.item1 p{
+    color: var(--Cyan);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.item2{
+    background-color: var(--Cyan);
+}
+
+.item2 h3{
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.item2 p{
+    color:var(--Light-Gray);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.item2 p span{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.item2 button{
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--Bright-Yellow);
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    box-shadow: 0px 4px 10x 1px #00000033;
+    border-radius: 8px;
+}
+.item3{
+    background-color: #4abebd;
+}
+
+.item h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.item3 p{
+    color: var(--Light-Gray);
+    line-height: 1.5rem;
+
+}
+
+@media only screen and (min-width:600px){
+    .container{
+        grid-template-columns: 50% 50%;
+    }
+    .item1{
+        grid-area: 1/ 1/ 2/ 3;
+    }
+}
